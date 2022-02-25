@@ -1,0 +1,79 @@
+/* 
+
+mobile 
+
+*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 20px;
+}
+
+.logo {
+  width: 145px;
+  height: 47px;
+  cursor: pointer;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 12px;
+  height: 100%;
+}
+
+.navLink {
+  cursor: pointer;
+  margin: auto 5px;
+  text-decoration: none;
+  color: #ff6060;
+  text-transform: uppercase;
+}
+
+.navLink:visited {
+  color: #ff6060;
+}
+
+.active {
+  text-decoration: underline;
+  cursor: pointer;
+  margin: auto 5px;
+  color: #ff6060;
+  text-transform: uppercase;
+}
+
+/* 
+
+Desktop 
+
+*/
+
+@media (min-width: 992px) {
+  .header {
+    margin: 40px auto;
+    padding: 0 20px;
+    max-width: 1280px;
+  }
+
+  .logo {
+    width: 210px;
+    height: 68px;
+  }
+
+  .nav ul {
+    font-size: 24px;
+  }
+
+  .navLink {
+    margin: auto 0px auto 60px;
+    text-transform: inherit;
+  }
+
+  .active {
+    margin: auto 0px auto 60px;
+    text-transform: inherit;
+    text-decoration: underline;
+  }
+}
